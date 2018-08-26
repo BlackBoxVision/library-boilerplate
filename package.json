@@ -11,10 +11,10 @@
   },
   "scripts": {
     "clean": "rimraf ./lib",
-    "build": "npm run clean && rollup -c",
+    "build": "cross-env NODE_ENV=production npm run clean && rollup -c",
     "publish": "npm run build && npm publish",
     "coverage": "npx babel-node ./node_modules/.bin/isparta cover _mocha",
-    "test": "npm run build && mocha ./test",
+    "test": "cross-env NODE_ENV=testing mocha ./test --require @babel/register",
     "prettier": "./node_modules/.bin/prettier --tab-width 4 --print-width 120 --single-quote --write './**/**/**/*.js'"
   },
   "repository": {
