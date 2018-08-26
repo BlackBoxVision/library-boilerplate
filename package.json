@@ -13,7 +13,7 @@
     "clean": "rimraf ./lib",
     "build": "cross-env NODE_ENV=production npm run clean && rollup -c",
     "publish": "npm run build && npm publish",
-    "coverage": "npx babel-node ./node_modules/.bin/isparta cover _mocha",
+    "coverage": "cross-env NODE_ENV=testing npx babel-node ./node_modules/.bin/isparta cover _mocha",
     "test": "cross-env NODE_ENV=testing mocha ./test --require @babel/register",
     "prettier": "./node_modules/.bin/prettier --tab-width 4 --print-width 120 --single-quote --write './**/**/**/*.js'"
   },
@@ -33,6 +33,7 @@
   "devDependencies": {
     "@babel/cli": "^7.0.0-rc.3",
     "@babel/core": "^7.0.0-rc.3",
+    "@babel/node": "^7.0.0-rc.3",
     "@babel/plugin-proposal-class-properties": "^7.0.0-rc.3",
     "@babel/polyfill": "^7.0.0-rc.3",
     "@babel/preset-env": "^7.0.0-rc.3",
