@@ -39,7 +39,7 @@ Those things can be provided by the following way:
 ```json
 //package.json
 {
-  "umdLibraryName": "YouLibrayName",
+  "umdLibraryName": "YouLibraryName",
   "external": []
 }
 ```
@@ -78,7 +78,7 @@ But, `env` will get deprecated sooner or later. It's better to transition, and m
 
 ## Licensing
 
-By default, this boilerplate comes with an empty MIT License. I you need to provide your own, you can replace it. I choose MIT License due to be the default when building an Open Source Library.
+By default, this boilerplate comes with an empty MIT License. If you need to provide your own, you can replace it. I choose MIT License due to be the default when building an Open Source Library.
 
 ## Notes
 
