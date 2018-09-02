@@ -10,7 +10,7 @@ This boilerplate enables you to easily setup your own library code, and you get 
 
 ## ¿How do I start?
 
-Fork this repository.
+Fork this repository, or better, download the `.zip` and generate a new repository pushing all the files from here.
 
 ## Library Naming
 
