@@ -11,10 +11,10 @@ export default {
     input: 'src/index.js',
     output: {
         sourcemap: true,
-        name: pkg.umdLibraryName,
+        name: pkg.umd.name,
         file: pkg.browser,
         format: 'umd',
-        globals: {}
+        globals: pkg.umd.globals
     },
     external: pkg.external,
     plugins: [

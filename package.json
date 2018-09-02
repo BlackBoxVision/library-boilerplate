@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "private": false,
   "description": "Library Boilerplate to easy bootstrap project",
-  "umdLibraryName": "YouLibrayName",
+  "umd": {
+    "name": "YourLibraryName",
+    "globals": {}
+  },
   "external": [],
   "main": "lib/library-boilerplate.cjs.js",
   "module": "lib/library-boilerplate.esm.js",

@@ -33,13 +33,17 @@ The rollup configuration defined is almost generic. You only need to provide som
 
 - `External Dependencies`
 - `UMD Module name`
+- `UMD Global Variables`
 
 Those things can be provided by the following way:
 
 ```json
 //package.json
 {
-  "umdLibraryName": "YouLibraryName",
+  "umd": {
+    "name": "YourLibraryName",
+    "globals": {}
+  },
   "external": []
 }
 ```
