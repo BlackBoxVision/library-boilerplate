@@ -80,18 +80,20 @@ But, `env` will get deprecated sooner or later. It's better to transition, and m
 
 By default, this boilerplate comes with an empty MIT License. If you need to provide your own, you can replace it. I choose MIT License due to be the default when building an Open Source Library.
 
+## Examples
+
+To be able to use your library in your examples, you need to do the following two things:
+
+- You need to run the command `npm run link`. This command will run a `production` build with rollup and will generate a symlink in your local NPM repository for you to be able to use your library wherever you want.
+- In the example project you should run `npm link your-library-name`. That will perform an install of the symlink in your project.
+
+
 ## Notes
 
 Take care that if you add some folder with content that is related to the library (For e.g. assets for logos or library documentation), add it to the `.npmignore` file. 
 The `.npmignore` fill is well configured, so you only expose what's really need to the person that will use it. 
 
 **This library boilerplate tries to solve this problem. Most of the time, library developers don't take care of what they upload to the NPM registry. You only should provide what the user needs. NOTHING ELSE MATTERS.**
-
-## ¿How to make my library work why the examples I have?
-
-Well, you can do that running the following command `npm run link`. This command will run a `production` build with rollup and will generate a symlink in NPM for you to be able to use your library.
-
-Later, in your example project you should run `npm link your-library-name`. That will perform an install of the symlink in your local example project.
 
 ## TODO 
 
