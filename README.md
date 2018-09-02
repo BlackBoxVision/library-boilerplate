@@ -99,6 +99,14 @@ The `.npmignore` fill is well configured, so you only expose what's really need 
 
 **This library boilerplate tries to solve this problem. Most of the time, library developers don't take care of what they upload to the NPM registry. You only should provide what the user needs. NOTHING ELSE MATTERS.**
 
+## Projects using Library Boilerplate
+
+The following projects are using library-boilerplate:
+
+- [`React Slot And Fill`](https://github.com/BlackBoxVision/react-slot-and-fill)
+
+If you have developed a library using this project, make a PR to add it to the `README.md`.
+
 ## TODO 
 
 There's more work that needs to be done for boilerplate, and that includes:
