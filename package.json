@@ -13,6 +13,7 @@
   },
   "scripts": {
     "clean": "rimraf ./lib",
+    "link": "npm run build && npm link",
     "build": "cross-env NODE_ENV=production npm run clean && rollup -c",
     "publish": "npm run build && npm publish",
     "coverage": "cross-env NODE_ENV=testing npx babel-node ./node_modules/.bin/isparta cover _mocha",

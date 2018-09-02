@@ -87,6 +87,12 @@ The `.npmignore` fill is well configured, so you only expose what's really need 
 
 **This library boilerplate tries to solve this problem. Most of the time, library developers don't take care of what they upload to the NPM registry. You only should provide what the user needs. NOTHING ELSE MATTERS.**
 
+## ¿How to make my library work why the examples I have?
+
+Well, you can do that running the following command `npm run link`. This command will run a `production` build with rollup and will generate a symlink in NPM for you to be able to use your library.
+
+Later, in your example project you should run `npm link your-library-name`. That will perform an install of the symlink in your local example project.
+
 ## TODO 
 
 There's more work that needs to be done for boilerplate, and that includes:
