@@ -11,12 +11,12 @@ export default {
     input: 'src/index.js',
     output: {
         sourcemap: true,
-        name: 'YourLibraryName',
+        name: pkg.umdLibraryName,
         file: pkg.browser,
         format: 'umd',
         globals: {}
     },
-    external: [],
+    external: pkg.external,
     plugins: [
         nodeResolve({
             jsnext: true,

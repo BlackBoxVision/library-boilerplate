@@ -14,7 +14,7 @@ export default {
         file: pkg.main,
         format: 'cjs'
     },
-    external: [],
+    external: pkg.external,
     plugins: [
         nodeResolve({
             jsnext: true,
