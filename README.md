@@ -82,10 +82,10 @@ By default, this boilerplate comes with an empty MIT License. If you need to pro
 
 ## Notes
 
-Take care that if you add some folder with content that is related to the library (For e.g. assets for logos or library documentation), to add it to the `.npmignore` file. 
-The `.npmigonore` fill is well configured, so you only expose what's really need to the person that will use it. 
+Take care that if you add some folder with content that is related to the library (For e.g. assets for logos or library documentation), add it to the `.npmignore` file. 
+The `.npmignore` fill is well configured, so you only expose what's really need to the person that will use it. 
 
-This library boilerplate tries to solve this problem. Most of the time, library developers don't take care of what they upload to the NPM registry. You only should provide what the user needs. NOTHING ELSE MATTERS.
+**This library boilerplate tries to solve this problem. Most of the time, library developers don't take care of what they upload to the NPM registry. You only should provide what the user needs. NOTHING ELSE MATTERS.**
 
 ## TODO 
 
